@@ -48,7 +48,8 @@ Supported Platforms
 - Windows Phone 7 ( Mango )
 - Bada 1.2 & 2.x
 - webOS
-    
+- Tizen
+
 Quick Example
 -------------
 
@@ -64,7 +65,7 @@ Quick Example
               'Altitude Accuracy: ' + position.coords.altitudeAccuracy  + '\n' +
               'Heading: '           + position.coords.heading           + '\n' +
               'Speed: '             + position.coords.speed             + '\n' +
-              'Timestamp: '         + new Date(position.timestamp)      + '\n');
+              'Timestamp: '         + position.timestamp                + '\n');
     };
 
     // onError Callback receives a PositionError object
@@ -84,7 +85,7 @@ Full Example
       <head>
         <title>Device Properties Example</title>
 
-        <script type="text/javascript" charset="utf-8" src="cordova-1.8.0.js"></script>
+        <script type="text/javascript" charset="utf-8" src="cordova-2.1.0.js"></script>
         <script type="text/javascript" charset="utf-8">
 
         // Wait for Cordova to load
@@ -108,15 +109,15 @@ Full Example
                                 'Altitude Accuracy: '  + position.coords.altitudeAccuracy      + '<br />' +
                                 'Heading: '            + position.coords.heading               + '<br />' +
                                 'Speed: '              + position.coords.speed                 + '<br />' +
-                                'Timestamp: '          + new Date(position.timestamp)          + '<br />';
+                                'Timestamp: '          +                                   position.timestamp          + '<br />';
         }
     
-	    // onError Callback receives a PositionError object
-	    //
-	    function onError(error) {
-	        alert('code: '    + error.code    + '\n' +
-	              'message: ' + error.message + '\n');
-	    }
+        // onError Callback receives a PositionError object
+        //
+        function onError(error) {
+            alert('code: '    + error.code    + '\n' +
+                    'message: ' + error.message + '\n');
+        }
 
         </script>
       </head>

@@ -29,3 +29,4 @@ Upgrading Guides
 - Upgrading Cordova webOS
 - Upgrading Cordova Windows Phone
 - Upgrading Cordova Bada
+- Upgrading Cordova Tizen

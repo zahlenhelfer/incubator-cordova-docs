@@ -33,6 +33,7 @@ Supported Platforms
 - Windows Phone 7 ( Mango )
 - Bada 1.2 & 2.x
 - webOS
+- Tizen
 
 Quick Example
 -------------
@@ -43,6 +44,7 @@ Quick Example
     //   - "iPhone"
     //   - "webOS"
     //   - "WinCE"
+    //   - "Tizen"
     var devicePlatform = device.platform;
 
 Full Example
@@ -53,7 +55,7 @@ Full Example
       <head>
         <title>Device Properties Example</title>
 
-        <script type="text/javascript" charset="utf-8" src="cordova-1.8.0.js"></script>
+        <script type="text/javascript" charset="utf-8" src="cordova-2.1.0.js"></script>
         <script type="text/javascript" charset="utf-8">
 
         // Wait for Cordova to load

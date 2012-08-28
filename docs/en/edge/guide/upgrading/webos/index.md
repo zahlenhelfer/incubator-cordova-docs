@@ -19,3 +19,20 @@ license: Licensed to the Apache Software Foundation (ASF) under one
 
 Upgrading Cordova webOS
 =======================
+
+This document is for people who need to upgrade their Cordova versions from an older version to a current version of Cordova.
+
+## Upgrade to 2.1.0 from 2.0.0 ##
+
+1. remove cordova-2.0.0.js from your project
+
+2. update the following line in your index.html:
+
+    change this:
+    <script type="text/javascript" src="cordova-2.0.0.js"></script> 
+    
+    to:
+    <script type="text/javascript" src="cordova-2.1.0.js"></script> 
+
+3. run the makefile to generate the newest version of the cordova-2.1.0.js file
+

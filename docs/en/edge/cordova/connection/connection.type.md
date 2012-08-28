@@ -36,6 +36,7 @@ Supported Platforms
 - Windows Phone 7 ( Mango )
 - Bada 2.x
 - webOS
+- Tizen
 
 Quick Example
 -------------
@@ -65,7 +66,7 @@ Full Example
       <head>
         <title>navigator.network.connection.type Example</title>
         
-        <script type="text/javascript" charset="utf-8" src="cordova-1.8.0.js"></script>
+        <script type="text/javascript" charset="utf-8" src="cordova-2.1.0.js"></script>
         <script type="text/javascript" charset="utf-8">
             
         // Wait for Cordova to load
@@ -121,3 +122,9 @@ Windows Phone Quirks
 --------------------
 
 - Windows Phone Emulator always detects `navigator.network.connection.type` as `Connection.UNKNOWN`.
+
+Tizen Quirks
+--------------------
+
+- Tizen can only detect a WiFi or cellular connection.
+    - `navigator.network.connection.type` is set to `Connection.CELL_2G` for all cellular data.

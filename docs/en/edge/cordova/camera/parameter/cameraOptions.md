@@ -28,7 +28,9 @@ Optional parameters to customize the camera settings.
       allowEdit : true,
       encodingType: Camera.EncodingType.JPEG,
       targetWidth: 100,
-      targetHeight: 100 };
+      targetHeight: 100,
+      popoverOptions: CameraPopoverOptions,
+      saveToPhotoAlbum: false };
 
 Options
 -------
@@ -72,15 +74,13 @@ Options
 
 - __correctOrientation:__ Rotate the image to correct for the orientation of the device during capture. (`Boolean`)
 - __saveToPhotoAlbum:__ Save the image to the photo album on the device after capture. (`Boolean`)
+- __popoverOptions:__ iOS only options to specify popover location in iPad.  Defined in CameraPopoverOptions
   
 Android Quirks
 --------------
 
 - Ignores the `allowEdit` parameter.
 - Camera.PictureSourceType.PHOTOLIBRARY and Camera.PictureSourceType.SAVEDPHOTOALBUM both display the same photo album.
-- Camera.EncodingType is not supported.
-- Ignores the `correctOrientation` parameter.
-- Ignores the `saveToPhotoAlbum` parameter.
 
 BlackBerry Quirks
 -----------------
@@ -92,7 +92,6 @@ BlackBerry Quirks
 - Using Large image sizes may result in inability to encode image on later model devices with high resolution cameras (e.g. Torch 9800).
 - Camera.MediaType is not supported.
 - Ignores the `correctOrientation` parameter.
-- Ignores the `saveToPhotoAlbum` parameter.
 
 webOS Quirks
 -----------
@@ -115,9 +114,13 @@ Windows Phone 7 Quirks
 
 - Ignores the `allowEdit` parameter.
 - Ignores the `correctOrientation` parameter.
-- Ignores the `saveToPhotoAlbum` parameter.
 
 Bada 1.2 Quirks
+--------------
+- options not supported
+- always returns a FILE URI
+
+Tizen Quirks
 --------------
 - options not supported
 - always returns a FILE URI

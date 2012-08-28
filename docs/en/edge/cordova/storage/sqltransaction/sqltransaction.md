@@ -39,6 +39,7 @@ Supported Platforms
 - BlackBerry WebWorks (OS 6.0 and higher)
 - iPhone
 - webOS
+- Tizen
 
 Execute SQL Quick Example
 ------------------
@@ -69,7 +70,7 @@ Full Example
       <head>
         <title>Storage Example</title>
 
-        <script type="text/javascript" charset="utf-8" src="cordova-1.8.0.js"></script>
+        <script type="text/javascript" charset="utf-8" src="cordova-2.1.0.js"></script>
         <script type="text/javascript" charset="utf-8">
 
         // Wait for Cordova to load

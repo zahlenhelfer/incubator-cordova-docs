@@ -34,6 +34,7 @@ Supported Platforms
 - iPhone
 - Windows Phone 7 (Mango)
 - Bada 1.2 & 2.x
+- Tizen
 
 Quick Example
 -------------
@@ -52,7 +53,7 @@ Full Example
       <head>
         <title>Acceleration Example</title>
 
-        <script type="text/javascript" charset="utf-8" src="cordova-1.8.0.js"></script>
+        <script type="text/javascript" charset="utf-8" src="cordova-2.1.0.js"></script>
         <script type="text/javascript" charset="utf-8">
 
         // The watch id references the current `watchAcceleration`

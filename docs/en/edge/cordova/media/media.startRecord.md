@@ -69,7 +69,7 @@ Full Example
       <head>
         <title>Device Properties Example</title>
 
-        <script type="text/javascript" charset="utf-8" src="cordova-1.8.0.js"></script>
+        <script type="text/javascript" charset="utf-8" src="cordova-2.1.0.js"></script>
         <script type="text/javascript" charset="utf-8">
 
         // Wait for Cordova to load
@@ -139,3 +139,8 @@ iOS Quirks
 ----------
 
 - The file to record to must already exist and should be of type .wav. The File API's can be used to create the file.
+
+Tizen Quirks
+----------
+
+- This API is not supported on Tizen devices.

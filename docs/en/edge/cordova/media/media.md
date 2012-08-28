@@ -35,6 +35,17 @@ Parameters
 - __mediaError__: (Optional) The callback that is invoked if there was an error. _(Function)_
 - __mediaStatus__: (Optional) The callback that is invoked to indicate status changes. _(Function)_
 
+Constants
+---------
+
+The following constants are reported as the only parameter to the __mediaStatus__ callback function.
+
+- `Media.MEDIA_NONE`     = 0;
+- `Media.MEDIA_STARTING` = 1;
+- `Media.MEDIA_RUNNING`  = 2;
+- `Media.MEDIA_PAUSED`   = 3;
+- `Media.MEDIA_STOPPED`  = 4;
+
 Methods
 -------
 
@@ -62,6 +73,7 @@ Supported Platforms
 - BlackBerry WebWorks (OS 5.0 and higher)
 - iOS
 - Windows Phone 7 (Mango)
+- Tizen
 
 Permissions
 -----------
@@ -119,3 +131,7 @@ Permissions
     </Capabilities>
 
 Reference: [Application Manifest for Windows Phone](http://msdn.microsoft.com/en-us/library/ff769509%28v=vs.92%29.aspx)
+
+### Tizen
+
+    No permissions are required.

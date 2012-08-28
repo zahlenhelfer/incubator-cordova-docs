@@ -34,6 +34,7 @@ Supported Platforms
 - iPhone
 - Windows Phone 7 ( Mango )
 - Bada 1.2 & 2.x
+- Tizen
 
 Quick Example
 -------------
@@ -49,7 +50,7 @@ Full Example
       <head>
         <title>Notification Example</title>
 
-        <script type="text/javascript" charset="utf-8" src="cordova-1.8.0.js"></script>
+        <script type="text/javascript" charset="utf-8" src="cordova-2.1.0.js"></script>
         <script type="text/javascript" charset="utf-8">
 
         // Wait for Cordova to load
@@ -111,3 +112,9 @@ Windows Phone 7 Quirks
 -------------
 
 - WP7 Cordova lib includes a generic beep file that is used. 
+
+Tizen Quirks
+-------------
+
+  - Tizen implements beep by playing an audio file via the media API.
+  - This beep file must be short, named `beep.wav` and has to be located in a 'sounds' sub-directory of the application root disctory.

@@ -33,7 +33,7 @@ The accelerometer is a motion sensor that detects the change (delta) in movement
 
 The `accelerometer.watchAcceleration` gets the device's current acceleration at a regular interval. Each time the `Acceleration` is retrieved, the `accelerometerSuccess` callback function is executed. Specify the interval in milliseconds via the `frequency` parameter in the `acceleratorOptions` object.
 
-The returned watch ID references references the accelerometer watch interval. The watch ID can be used with `accelerometer.clearWatch` to stop watching the accelerometer.
+The returned watch ID references the accelerometer watch interval. The watch ID can be used with `accelerometer.clearWatch` to stop watching the accelerometer.
 
 Supported Platforms
 -------------------
@@ -43,6 +43,7 @@ Supported Platforms
 - iPhone
 - Windows Phone 7 (Mango)
 - Bada 1.2 & 2.x
+- Tizen
 
 
 Quick Example
@@ -71,7 +72,7 @@ Full Example
       <head>
         <title>Acceleration Example</title>
 
-        <script type="text/javascript" charset="utf-8" src="cordova-1.8.0.js"></script>
+        <script type="text/javascript" charset="utf-8" src="cordova-2.1.0.js"></script>
         <script type="text/javascript" charset="utf-8">
 
         // The watch id references the current `watchAcceleration`
